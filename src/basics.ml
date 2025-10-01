@@ -2,7 +2,7 @@ let abs x =
   if x >= 0 then x
   else (-x)
 
-  
+  (* Part 1 *)
 
 let rev_tup (tup : 'a * 'b) =
   let (a, b) = tup in
@@ -28,7 +28,7 @@ let to_us_format (date1: int * int * int) =
   let (y, m, d) = date1 in
   (m, d, y)
 
-  
+  (* Part 2 *)
 
 let rec pow x p =
   if p = 0 then 1
@@ -39,7 +39,7 @@ let rec fac n =
   if n <= 1 then 1
   else n * fac (n - 1)
 
-
+(* Part 3 *)
 
 let rec get_nth (idx, lst) =
   match lst with
@@ -65,3 +65,4 @@ let sum lst1 lst2 =
     | hd :: tl -> hd + sum_list tl
   in
   sum_list lst1 + sum_list lst2
+

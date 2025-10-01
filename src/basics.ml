@@ -2,9 +2,7 @@ let abs x =
   if x >= 0 then x
   else (-x)
 
-(***********************************)
-(* Part 1: Non-Recursive Functions *)
-(***********************************)
+(* Part 1 *)
 
 let rev_tup (a, b) = (b, a)
 
@@ -19,10 +17,7 @@ let is_older (y1, m1, d1) (y2, m2, d2) =
 
 let to_us_format (y, m, d) = (m, d, y)
 
-
-(*******************************)
-(* Part 2: Recursive Functions *)
-(*******************************)
+(* Part 2 *)
 
 let rec pow x p =
   if p = 0 then 1
@@ -32,12 +27,7 @@ let rec fac n =
   if n = 1 then 1
   else n * fac (n - 1)
 
-
-(*****************)
-(* Part 3: Lists *)
-(*****************)
-
-(* Part 3: Lists *)
+(* Part 3 *)
 
 let rec get_nth (idx, lst) =
   match (idx, lst) with
@@ -59,6 +49,7 @@ let sum lst1 lst2 =
     | h :: t -> h + list_sum t
   in
   list_sum lst1 + list_sum lst2
+
 
 
 

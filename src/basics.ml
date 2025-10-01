@@ -37,6 +37,8 @@ let rec fac n =
 (* Part 3: Lists *)
 (*****************)
 
+(* Part 3: Lists *)
+
 let rec get_nth (idx, lst) =
   match (idx, lst) with
   | 0, h :: _ -> h
@@ -50,13 +52,14 @@ let larger lst1 lst2 =
   else if len2 > len1 then lst2
   else []
 
-let sum (lst1, lst2) =
+let sum lst1 lst2 =
   let rec list_sum lst =
     match lst with
     | [] -> 0
     | h :: t -> h + list_sum t
   in
   list_sum lst1 + list_sum lst2
+
 
 
 
